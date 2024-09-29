@@ -9,4 +9,9 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="DropdownMenu.WPF" Version="1.0.0" />
+    <PackageReference Include="XamlTune" Version="0.3.0" />
+  </ItemGroup>
+
 </Project>
