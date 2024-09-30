@@ -1,0 +1,42 @@
+F:\Wpftutorials\YouTube Viewer\YouTube Viewer\bin\Debug\net8.0-windows\YouTube Viewer.exe
+F:\Wpftutorials\YouTube Viewer\YouTube Viewer\bin\Debug\net8.0-windows\YouTube Viewer.deps.json
+F:\Wpftutorials\YouTube Viewer\YouTube Viewer\bin\Debug\net8.0-windows\YouTube Viewer.runtimeconfig.json
+F:\Wpftutorials\YouTube Viewer\YouTube Viewer\bin\Debug\net8.0-windows\YouTube Viewer.dll
+F:\Wpftutorials\YouTube Viewer\YouTube Viewer\bin\Debug\net8.0-windows\YouTube Viewer.pdb
+F:\Wpftutorials\YouTube Viewer\YouTube Viewer\obj\Debug\net8.0-windows\MainWindow.g.cs
+F:\Wpftutorials\YouTube Viewer\YouTube Viewer\obj\Debug\net8.0-windows\App.g.cs
+F:\Wpftutorials\YouTube Viewer\YouTube Viewer\obj\Debug\net8.0-windows\YouTube Viewer_MarkupCompile.cache
+F:\Wpftutorials\YouTube Viewer\YouTube Viewer\obj\Debug\net8.0-windows\YouTube Viewer_MarkupCompile.lref
+F:\Wpftutorials\YouTube Viewer\YouTube Viewer\obj\Debug\net8.0-windows\MainWindow.baml
+F:\Wpftutorials\YouTube Viewer\YouTube Viewer\obj\Debug\net8.0-windows\YouTube Viewer.g.resources
+F:\Wpftutorials\YouTube Viewer\YouTube Viewer\obj\Debug\net8.0-windows\YouTube Viewer.GeneratedMSBuildEditorConfig.editorconfig
+F:\Wpftutorials\YouTube Viewer\YouTube Viewer\obj\Debug\net8.0-windows\YouTube Viewer.AssemblyInfoInputs.cache
+F:\Wpftutorials\YouTube Viewer\YouTube Viewer\obj\Debug\net8.0-windows\YouTube Viewer.AssemblyInfo.cs
+F:\Wpftutorials\YouTube Viewer\YouTube Viewer\obj\Debug\net8.0-windows\YouTube Viewer.csproj.CoreCompileInputs.cache
+F:\Wpftutorials\YouTube Viewer\YouTube Viewer\obj\Debug\net8.0-windows\YouTube Viewer.sourcelink.json
+F:\Wpftutorials\YouTube Viewer\YouTube Viewer\obj\Debug\net8.0-windows\YouTube Viewer.dll
+F:\Wpftutorials\YouTube Viewer\YouTube Viewer\obj\Debug\net8.0-windows\refint\YouTube Viewer.dll
+F:\Wpftutorials\YouTube Viewer\YouTube Viewer\obj\Debug\net8.0-windows\YouTube Viewer.pdb
+F:\Wpftutorials\YouTube Viewer\YouTube Viewer\obj\Debug\net8.0-windows\YouTube Viewer.genruntimeconfig.cache
+F:\Wpftutorials\YouTube Viewer\YouTube Viewer\obj\Debug\net8.0-windows\ref\YouTube Viewer.dll
+F:\Wpftutorials\YouTube Viewer\YouTube Viewer\obj\Debug\net8.0-windows\Components\YouTubeViewersDetails.g.cs
+F:\Wpftutorials\YouTube Viewer\YouTube Viewer\obj\Debug\net8.0-windows\Components\YouTubeViewersListing.g.cs
+F:\Wpftutorials\YouTube Viewer\YouTube Viewer\obj\Debug\net8.0-windows\Views\YouTubeViewersView.g.cs
+F:\Wpftutorials\YouTube Viewer\YouTube Viewer\obj\Debug\net8.0-windows\GeneratedInternalTypeHelper.g.cs
+F:\Wpftutorials\YouTube Viewer\YouTube Viewer\obj\Debug\net8.0-windows\Components\YouTubeViewersDetails.baml
+F:\Wpftutorials\YouTube Viewer\YouTube Viewer\obj\Debug\net8.0-windows\Components\YouTubeViewersListing.baml
+F:\Wpftutorials\YouTube Viewer\YouTube Viewer\obj\Debug\net8.0-windows\Views\YouTubeViewersView.baml
+F:\Wpftutorials\YouTube Viewer\YouTube Viewer\bin\Debug\net8.0-windows\XamlTuneMerged.dll
+F:\Wpftutorials\YouTube Viewer\YouTube Viewer\obj\Debug\net8.0-windows\YouTube Viewer.csproj.AssemblyReference.cache
+F:\Wpftutorials\YouTube Viewer\YouTube Viewer\obj\Debug\net8.0-windows\YouTube .CD650110.Up2Date
+F:\Wpftutorials\YouTube Viewer\YouTube Viewer\obj\Debug\net8.0-windows\App.baml
+F:\Wpftutorials\YouTube Viewer\YouTube Viewer\bin\Debug\net8.0-windows\DropdownMenuControl.dll
+F:\Wpftutorials\YouTube Viewer\YouTube Viewer\obj\Debug\net8.0-windows\Components\YouTubeViewerDetailsForm.g.cs
+F:\Wpftutorials\YouTube Viewer\YouTube Viewer\obj\Debug\net8.0-windows\Views\AddYouTubeViewerView.g.cs
+F:\Wpftutorials\YouTube Viewer\YouTube Viewer\obj\Debug\net8.0-windows\Views\EditYouTubeViewerView.g.cs
+F:\Wpftutorials\YouTube Viewer\YouTube Viewer\obj\Debug\net8.0-windows\Components\YouTubeViewerDetailsForm.baml
+F:\Wpftutorials\YouTube Viewer\YouTube Viewer\obj\Debug\net8.0-windows\Views\AddYouTubeViewerView.baml
+F:\Wpftutorials\YouTube Viewer\YouTube Viewer\obj\Debug\net8.0-windows\Views\EditYouTubeViewerView.baml
+F:\Wpftutorials\YouTube Viewer\YouTube Viewer\obj\Debug\net8.0-windows\Components\YouTubeViewersListingItem.g.cs
+F:\Wpftutorials\YouTube Viewer\YouTube Viewer\bin\Debug\net8.0-windows\LoadingSpinnerControl.dll
+F:\Wpftutorials\YouTube Viewer\YouTube Viewer\obj\Debug\net8.0-windows\Components\YouTubeViewersListingItem.baml

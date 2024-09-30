@@ -92,15 +92,15 @@
                     Command="{Binding CancelCommand}"
                     Content="Cancel"
                     Style="{StaticResource ButtonSecondary}" />
-            <custom:LoadingSpinner Diameter="25"
+            <!--custom:LoadingSpinner Diameter="25"
                                    IsLoading="{Binding IsSubmitting}"
-                                   Thickness="2" />
+                                   Thickness="2" /-->
         </WrapPanel>
 
-        <TextBlock Grid.Row="2"
+        <!--TextBlock Grid.Row="2"
                    Margin="0,15,0,0"
                    Style="{StaticResource ErrorMessage}"
                    Text="{Binding ErrorMessage}"
-                   Visibility="{Binding HasErrorMessage, Converter={StaticResource BooleanToVisibilityConverter}}" />
+                   Visibility="{Binding HasErrorMessage, Converter={StaticResource BooleanToVisibilityConverter}}" /-->
     </Grid>
 </UserControl>

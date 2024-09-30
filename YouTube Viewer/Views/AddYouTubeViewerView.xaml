@@ -4,6 +4,7 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:YouTube_Viewer.Views"
+             xmlns:components="clr-namespace:YouTube_Viewer.Components"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
     <Grid>
@@ -17,7 +18,7 @@
                    Text="Add YouTube Viewer" />
 
         <components:YouTubeViewerDetailsForm Grid.Row="1"
-                                             Margin="0 30 0 0"
-                                             DataContext="{Binding YouTubeViewerDetailsFormViewModel}" />
+                                             Margin="0 30 0 0" />
+        <!--DataContext="{Binding YouTubeViewerDetailsFormViewModel}" />-->
     </Grid>
 </UserControl>
