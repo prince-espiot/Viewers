@@ -7,10 +7,19 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
+    <Compile Update="Components\YouTubeViewerDetailsForm.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Components\YouTubeViewersDetails.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="Components\YouTubeViewersListing.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\AddYouTubeViewerView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\EditYouTubeViewerView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="Views\YouTubeViewersView.xaml.cs">
@@ -18,6 +27,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Page Update="Components\YouTubeViewerDetailsForm.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="Components\YouTubeViewersDetails.xaml">
       <SubType>Designer</SubType>
     </Page>
@@ -25,6 +37,12 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\AddYouTubeViewerView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\EditYouTubeViewerView.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Views\YouTubeViewersView.xaml">

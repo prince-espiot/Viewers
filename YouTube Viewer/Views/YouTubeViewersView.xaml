@@ -21,7 +21,7 @@
 
             <TextBlock Grid.Column="0"
                        Text="Viewers"
-                       FontSize="32" />
+                       Style="{StaticResource PageHeader}" />
             <Button  FontSize="16"
                      Grid.Column="1"
                      Content="Add"

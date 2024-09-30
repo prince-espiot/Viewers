@@ -4,7 +4,6 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:local="clr-namespace:YouTube_Viewer.Components"
-             xmlns:custom="clr-namespace:DropdownMenuControl;assembly=DropdownMenuControl"
              mc:Ignorable="d"
              d:DesignHeight="450"
              d:DesignWidth="800">
@@ -19,34 +18,28 @@
                 </Grid.OpacityMask>
                 <Border x:Name="border"
                         Background="White"
-                        CornerRadius="5" />
+                        CornerRadius="5" 
+                        Padding="10"/>
 
                 <ListView BorderThickness="0"
-                          ItemsSource="{Binding YouTubeViewersListingItemViewModels}">
+                          ItemsSource="{Binding YouTubeViewersListingItemViewModels}"
+                          SelectedItem="{Binding  SelectedYouTubeViewerListingItemViewModel}"
+                          SelectionMode="Single">
                     <ListView.ItemContainerStyle>
                         <Style TargetType="ListViewItem">
                             <Setter Property="HorizontalContentAlignment"
                                     Value="Stretch" />
+                            <Setter Property="AutomationProperties.AutomationId"
+                                    Value="{Binding Username, StringFormat={}{0}_YouTubeViewerListingItem}" />
                         </Style>
                     </ListView.ItemContainerStyle>
+                    
                     <ListView.ItemTemplate>
                         <DataTemplate>
-                            <Border Padding="5 10 0 0" TextBlock.FontSize="16">
-                                <Grid>
-                                    <Grid.ColumnDefinitions>
-                                        <ColumnDefinition Width="*" />
-                                        <ColumnDefinition Width="auto" />
-                                    </Grid.ColumnDefinitions>
-                                    <TextBlock Grid.Column="0"
-                                               Text="{Binding Username}" />
-                                    <custom:DropdownMenu Grid.Column="1"
-                                                         Margin="10 0 0 0">
-                                        <TextBlock Text="Hello" />
-                                    </custom:DropdownMenu>
-                                </Grid>
-                            </Border>
+                            <local:YouTubeViewersListingItem/>
                         </DataTemplate>
                     </ListView.ItemTemplate>
+                    
                 </ListView>
             </Grid>
         </Border>

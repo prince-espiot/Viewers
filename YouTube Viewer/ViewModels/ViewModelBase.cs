@@ -16,5 +16,10 @@ namespace YouTube_Viewer.ViewModels
         {
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
+
+        protected virtual void Dispose()
+        {
+
+        }
     }
 }
