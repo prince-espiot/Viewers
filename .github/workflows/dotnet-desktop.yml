@@ -1,0 +1,35 @@
+# .NET Core Desktop Application Build Workflow
+
+name: .NET Core Desktop Debug Build
+
+# Trigger the workflow on every commit (push) to the main branch
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: windows-latest  # The latest Windows runner available on GitHub
+
+    env:
+      Solution_Name: YouTubeViewer.sln  # Replace with your solution's name
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+      with:
+        fetch-depth: 0  # Fetches the entire history for accurate build
+
+    - name: Setup .NET Core SDK
+      uses: actions/setup-dotnet@v4
+      with:
+        dotnet-version: 8.0.x  # Install the required .NET Core SDK version
+
+    - name: Setup MSBuild
+      uses: microsoft/setup-msbuild@v2  # Adds MSBuild to the PATH
+
+    - name: Restore dependencies
+      run: dotnet restore $env:Solution_Name  # Restores NuGet dependencies
+
+    - name: Build the application in Debug mode
+      run: msbuild $env:Solution_Name /p:Configuration=Debug  # Build the app in Debug mode
