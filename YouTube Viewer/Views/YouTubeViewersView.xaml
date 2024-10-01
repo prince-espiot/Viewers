@@ -20,12 +20,14 @@
             </Grid.ColumnDefinitions>
 
             <TextBlock Grid.Column="0"
-                       Text="Viewers"
-                       Style="{StaticResource PageHeader}" />
-            <Button  FontSize="16"
-                     Grid.Column="1"
-                     Content="Add"
-                     DataContext="{Binding AddYoutubeViewcommand}"/>
+                       Style="{StaticResource PageHeader}"
+                       Text="Employee Tracker" />
+
+            <Button Grid.Column="1"
+                    AutomationProperties.AutomationId="AddYouTubeViewerButton"
+                    Command="{Binding AddYouTubeViewersCommand}"
+                    Content="Add"
+                    FontSize="16" />
         </Grid>
         
         

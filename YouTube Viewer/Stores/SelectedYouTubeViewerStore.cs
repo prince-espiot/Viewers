@@ -9,9 +9,27 @@ namespace YouTube_Viewer.Stores
 {
     public class SelectedYouTubeViewerStore
     {
+		private readonly YouTubeViewersStore _youTubeviewersStore;
+
 		private YouTubeViewer? _selectedYouTubeViewer;
 
-		public YouTubeViewer SelectedYouTubeViewer
+        public SelectedYouTubeViewerStore(YouTubeViewersStore youTubeviewersStore)
+        {
+            _youTubeviewersStore = youTubeviewersStore;
+            _youTubeviewersStore.YouTubeViewersUpdated += YouTubeviewersStore_YouTubeViewersUpdated;
+        }
+
+        private void YouTubeviewersStore_YouTubeViewersUpdated(YouTubeViewer obj)
+        {
+            if (obj.Id ==SelectedYouTubeViewer?.Id)
+            {
+                SelectedYouTubeViewer = obj;
+            }
+        }
+
+        
+
+        public YouTubeViewer SelectedYouTubeViewer
         {
 			get { 
 

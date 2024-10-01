@@ -10,8 +10,7 @@
         "dependencies": {
           "DropdownMenu.WPF": "1.0.0",
           "LoadingSpinner.WPF": "1.0.0",
-          "SimpleModal.WPF": "1.0.0",
-          "XamlTune": "0.3.0"
+          "SimpleModal.WPF": "1.0.0"
         },
         "runtime": {
           "YouTube Viewer.dll": {}
@@ -36,14 +35,6 @@
       "SimpleModal.WPF/1.0.0": {
         "runtime": {
           "lib/netcoreapp3.1/ModalControl.dll": {
-            "assemblyVersion": "1.0.0.0",
-            "fileVersion": "1.0.0.0"
-          }
-        }
-      },
-      "XamlTune/0.3.0": {
-        "runtime": {
-          "lib/net40/XamlTuneMerged.dll": {
             "assemblyVersion": "1.0.0.0",
             "fileVersion": "1.0.0.0"
           }
@@ -77,13 +68,6 @@
       "sha512": "sha512-dtTvUl6O2peKZz2oCh5Y6mRjYL+q/Izxm6+z/Nzdpbcgxdo/qTD39stwegu/sY0uBTAYGJEy2P9X8mwpOMM+rw==",
       "path": "simplemodal.wpf/1.0.0",
       "hashPath": "simplemodal.wpf.1.0.0.nupkg.sha512"
-    },
-    "XamlTune/0.3.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-vjE6rT0R2IBYQ/xm8556vC1aw6pY9YVzDR1phiobhTZ9MhFwkWNtZYjqdqZSB34jAo2U29YsRZYqD6sofCsc5Q==",
-      "path": "xamltune/0.3.0",
-      "hashPath": "xamltune.0.3.0.nupkg.sha512"
     }
   }
 }

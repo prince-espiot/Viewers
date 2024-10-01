@@ -24,5 +24,10 @@ namespace YouTube_Viewer.Components
         {
             InitializeComponent();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            dropdown.IsOpen = false;
+        }
     }
 }

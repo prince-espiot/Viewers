@@ -37,6 +37,16 @@
         "frameworkReferences": [
           "Microsoft.WindowsDesktop.App.WPF"
         ]
+      },
+      "YouTubeViewers.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/YouTubeViewers.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/YouTubeViewers.Domain.dll": {}
+        }
       }
     }
   },
@@ -76,13 +86,19 @@
         "simplemodal.wpf.1.0.0.nupkg.sha512",
         "simplemodal.wpf.nuspec"
       ]
+    },
+    "YouTubeViewers.Domain/1.0.0": {
+      "type": "project",
+      "path": "../YouTubeViewers.Domain/YouTubeViewers.Domain.csproj",
+      "msbuildProject": "../YouTubeViewers.Domain/YouTubeViewers.Domain.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net8.0-windows7.0": [
       "DropdownMenu.WPF >= 1.0.0",
       "LoadingSpinner.WPF >= 1.0.0",
-      "SimpleModal.WPF >= 1.0.0"
+      "SimpleModal.WPF >= 1.0.0",
+      "YouTubeViewers.Domain >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -111,7 +127,11 @@
       "frameworks": {
         "net8.0-windows7.0": {
           "targetAlias": "net8.0-windows",
-          "projectReferences": {}
+          "projectReferences": {
+            "F:\\Wpftutorials\\YouTube Viewer\\YouTubeViewers.Domain\\YouTubeViewers.Domain.csproj": {
+              "projectPath": "F:\\Wpftutorials\\YouTube Viewer\\YouTubeViewers.Domain\\YouTubeViewers.Domain.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

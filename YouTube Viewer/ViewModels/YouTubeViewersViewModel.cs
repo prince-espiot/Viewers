@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Input;
 using YouTube_Viewer.Commands;
+using YouTube_Viewer.Models;
 using YouTube_Viewer.Stores;
 
 namespace YouTube_Viewer.ViewModels
@@ -14,14 +15,16 @@ namespace YouTube_Viewer.ViewModels
         public YouTubeViewersListingViewModel? YouTubeViewersListingViewModel { get;  }
 
         public YouTubeViewersDetailsViewModel? YouTubeViewersDetailsViewModel { get;  }
-        public ICommand? AddYoutubeViewcommand {  get; }
+        public ICommand? AddYouTubeViewersCommand {  get; }
 
-        public YouTubeViewersViewModel(SelectedYouTubeViewerStore _selectedYouTubeViewerStore, ModalNavigationStore modalNavigationStore)
+        public YouTubeViewersViewModel(YouTubeViewersStore? youTubeViewersStore, SelectedYouTubeViewerStore selectedYouTubeViewerStore, ModalNavigationStore modalNavigationStore)
         {
-            YouTubeViewersListingViewModel = new YouTubeViewersListingViewModel(_selectedYouTubeViewerStore);
-            YouTubeViewersDetailsViewModel = new YouTubeViewersDetailsViewModel(_selectedYouTubeViewerStore);
+            YouTubeViewersListingViewModel = new YouTubeViewersListingViewModel(youTubeViewersStore,selectedYouTubeViewerStore, modalNavigationStore);
+            YouTubeViewersDetailsViewModel = new YouTubeViewersDetailsViewModel(selectedYouTubeViewerStore);
 
-            AddYoutubeViewcommand = new OpenAddYouTubeViewerCommand(modalNavigationStore);
+            AddYouTubeViewersCommand = new OpenAddYouTubeViewerCommand(youTubeViewersStore,modalNavigationStore);
         }
+
+      
     }
 }

@@ -80,8 +80,8 @@
                                                 Value="20 10" />
                                         <Setter Property="Cursor"
                                                 Value="Hand" />
-                                        <!--EventSetter Event="Click"
-                                                     Handler="Button_Click" /-->
+                                        <EventSetter Event="Click"
+                                                     Handler="Button_Click" />
 
                                         <Setter Property="Template">
                                             <Setter.Value>

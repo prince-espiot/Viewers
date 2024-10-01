@@ -4,7 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Input;
+using YouTube_Viewer.Commands;
 using YouTube_Viewer.Models;
+using YouTube_Viewer.Stores;
 
 namespace YouTube_Viewer.ViewModels
 {
@@ -29,6 +31,9 @@ namespace YouTube_Viewer.ViewModels
         }
 
         private string _errorMessage;
+        private YouTubeViewersStore? _youTubeViewersStore;
+        private ModalNavigationStore _modalNavigationStore;
+
         public string ErrorMessage
         {
             get
@@ -51,11 +56,13 @@ namespace YouTube_Viewer.ViewModels
 
         
 
-        public YouTubeViewersListingItemViewModel(YouTubeViewer youTubeViewer)
+        public YouTubeViewersListingItemViewModel(YouTubeViewer youTubeViewer, YouTubeViewersStore? youTubeViewersStore, ModalNavigationStore modalNavigationStore)
         {
             YouTubeViewer = youTubeViewer;
-           // EditCommand = new OpenEditYouTubeViewerCommand(this, youTubeViewersStore, modalNavigationStore);
-           // DeleteCommand = new DeleteYouTubeViewerCommand(this, youTubeViewersStore);
+            _youTubeViewersStore = youTubeViewersStore;
+            _modalNavigationStore = modalNavigationStore;
+
+            EditCommand = new OpenEditYouTubeViewerCommand(this, youTubeViewersStore, modalNavigationStore);
         }
 
         public void Update(YouTubeViewer youTubeViewer)

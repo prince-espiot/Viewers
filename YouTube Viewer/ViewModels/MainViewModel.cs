@@ -22,6 +22,8 @@ namespace YouTube_Viewer.ViewModels
             YouTubeViewersViewModel = youTubeViewersViewModel;
 
             _modalNavigationStore.CurrentViewModelChanged += ModalNavigationStore_CurrentViewModelChanged;
+
+           // _modalNavigationStore.CurrentViewModel = new AddYouTubeViewerViewModel();
             
         }
 

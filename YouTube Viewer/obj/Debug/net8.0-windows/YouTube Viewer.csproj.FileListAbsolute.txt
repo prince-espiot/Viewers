@@ -5,7 +5,6 @@ F:\Wpftutorials\YouTube Viewer\YouTube Viewer\bin\Debug\net8.0-windows\YouTube V
 F:\Wpftutorials\YouTube Viewer\YouTube Viewer\bin\Debug\net8.0-windows\YouTube Viewer.pdb
 F:\Wpftutorials\YouTube Viewer\YouTube Viewer\bin\Debug\net8.0-windows\DropdownMenuControl.dll
 F:\Wpftutorials\YouTube Viewer\YouTube Viewer\bin\Debug\net8.0-windows\LoadingSpinnerControl.dll
-F:\Wpftutorials\YouTube Viewer\YouTube Viewer\bin\Debug\net8.0-windows\XamlTuneMerged.dll
 F:\Wpftutorials\YouTube Viewer\YouTube Viewer\obj\Debug\net8.0-windows\YouTube Viewer.csproj.AssemblyReference.cache
 F:\Wpftutorials\YouTube Viewer\YouTube Viewer\obj\Debug\net8.0-windows\Components\YouTubeViewerDetailsForm.g.cs
 F:\Wpftutorials\YouTube Viewer\YouTube Viewer\obj\Debug\net8.0-windows\Components\YouTubeViewersDetails.g.cs
