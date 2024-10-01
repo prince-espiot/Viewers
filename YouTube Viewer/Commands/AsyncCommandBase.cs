@@ -22,7 +22,7 @@ namespace YouTube_Viewer.Commands
             }
         }
 
-        public override bool CanExecute(object parameter)
+        public override bool CanExecute(object parameter) // DISABLE SUBmit command toggle
         {
             return !IsExecuting && base.CanExecute(parameter);
         }

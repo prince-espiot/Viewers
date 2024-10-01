@@ -26,7 +26,9 @@
                         </Style.Triggers>
                     </Style>
                 </StackPanel.Style>
-                <loadingspinnercontrol:LoadingSpinner Diameter="80" IsLoading="True"/>
+            <loadingspinnercontrol:LoadingSpinner Diameter="80"
+                                                  Thickness="5"
+                                                  Color="#44d46a" IsLoading="True"/>
                 <TextBlock Margin="0 20 0 0"
                     TextAlignment="Center"
                            VerticalAlignment="Center"
@@ -36,7 +38,7 @@
         </StackPanel>
         <Grid>
             <Grid.Style>
-                <Style TargetType="Grid">
+                <Style TargetType="Grid"> 
                     <Setter Property="Visibility"
                             Value="Collapsed" />
                     <Style.Triggers>

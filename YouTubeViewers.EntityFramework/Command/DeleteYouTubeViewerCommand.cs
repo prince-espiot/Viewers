@@ -21,6 +21,7 @@ namespace YouTubeViewers.EntityFramework.Command
         {
             using (YouTubeViewersDbContext context = _youTubeViewersDbContextFactory.Create())
             {
+                await Task.Delay(3000);
                 // Find the YouTubeViewerDto by its ID
                 var youTubeViewerDto = await context.YouTubeViewers
                     .FirstOrDefaultAsync(v => v.Id == id);

@@ -27,7 +27,7 @@ namespace YouTube_Viewer.Commands
             
             try
             {
-                await Task.Delay(5000);
+                
 
                 await _youTubeViewersStore.Load();
             }

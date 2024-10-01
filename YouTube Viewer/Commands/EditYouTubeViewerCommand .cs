@@ -30,7 +30,7 @@ namespace YouTube_Viewer.Commands
 
         {
             YouTubeViewerDetailsFormViewModel formViewModel = _editYouTubeViewerViewModel.YouTubeViewerDetailsFormViewModel;
-            formViewModel.ErrorMessage = null;
+            //formViewModel.ErrorMessage = null;
             formViewModel.IsSubmitting = true;
 
             YouTubeViewer youTubeViewer = new YouTubeViewer(_editYouTubeViewerViewModel.YouTubeViewerId, formViewModel.Username, formViewModel.IsSubscribed, formViewModel.IsMember);
