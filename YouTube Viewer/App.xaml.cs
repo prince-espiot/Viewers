@@ -1,8 +1,14 @@
-﻿using System.Configuration;
+﻿using Microsoft.EntityFrameworkCore;
+using System.Configuration;
 using System.Data;
 using System.Windows;
 using YouTube_Viewer.Stores;
 using YouTube_Viewer.ViewModels;
+using YouTubeViewers.Domain.Commands;
+using YouTubeViewers.Domain.Queries;
+using YouTubeViewers.EntityFramework;
+using YouTubeViewers.EntityFramework.Command;
+using YouTubeViewers.EntityFramework.Queries;
 
 namespace YouTube_Viewer
 {
@@ -12,18 +18,38 @@ namespace YouTube_Viewer
     public partial class App : Application
     {
         private readonly ModalNavigationStore? _modalNavigationStore;
+        private readonly YouTubeViewersDbContextFactory _dbContextFactory;
+        private readonly ICreateYouTubeViewerCommand? _createYouTubeViewerCommand;
+        private readonly IUpdateYouTubeViewerCommand? _updateYouTubeViewerCommand;
+        private readonly IDeleteYouTubeViewerCommand? _deleteYouTubeViewerCommand;
+        private readonly IGetAllYouTubeViewersQuery? _getAllYouTubeViewersQuery;
+
         private readonly SelectedYouTubeViewerStore? _selectedYouTubeViewerStore;
         private readonly YouTubeViewersStore? _youTubeViewersStore;
 
         public App()
         {
+            string connectionString = "Data Source=Project.db";
             _modalNavigationStore = new ModalNavigationStore();
-            _youTubeViewersStore = new YouTubeViewersStore();
+
+            _dbContextFactory = new YouTubeViewersDbContextFactory(
+                new DbContextOptionsBuilder().UseSqlite(connectionString).Options);
+            _getAllYouTubeViewersQuery = new GetAllYouTubeViewersQuery(_dbContextFactory);
+            _createYouTubeViewerCommand = new CreateYouTubeViewerCommand(_dbContextFactory);
+            _updateYouTubeViewerCommand = new UpdateYouTubeViewerCommand(_dbContextFactory);
+            _deleteYouTubeViewerCommand = new DeleteYouTubeViewerCommand(_dbContextFactory);
+            _youTubeViewersStore = new YouTubeViewersStore(_createYouTubeViewerCommand, _updateYouTubeViewerCommand,
+                _deleteYouTubeViewerCommand, _getAllYouTubeViewersQuery);
             _selectedYouTubeViewerStore = new SelectedYouTubeViewerStore(_youTubeViewersStore);
         }
         protected override void OnStartup(StartupEventArgs e)
         {
-            YouTubeViewersViewModel youTubeViewersViewModel = new YouTubeViewersViewModel(_youTubeViewersStore, _selectedYouTubeViewerStore, _modalNavigationStore);
+            using (YouTubeViewersDbContext context = _dbContextFactory.Create()) 
+            { 
+                context.Database.Migrate();
+            }
+
+            YouTubeViewersViewModel youTubeViewersViewModel = YouTubeViewersViewModel.LoadViewModel(_youTubeViewersStore, _selectedYouTubeViewerStore, _modalNavigationStore);
 
             MainWindow = new MainWindow()
             {

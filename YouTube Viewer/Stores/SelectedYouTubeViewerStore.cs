@@ -26,7 +26,7 @@ namespace YouTube_Viewer.Stores
                 SelectedYouTubeViewer = obj;
             }
         }
-
+        public event Action? SelectedYouTubeViewerChanged;	
         
 
         public YouTubeViewer SelectedYouTubeViewer
@@ -44,7 +44,7 @@ namespace YouTube_Viewer.Stores
 			}
 		}
 
-		public event Action? SelectedYouTubeViewerChanged;	
+		
 
 	}
 }

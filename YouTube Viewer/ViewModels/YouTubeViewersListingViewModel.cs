@@ -22,6 +22,7 @@ namespace YouTube_Viewer.ViewModels
         public IEnumerable<YouTubeViewersListingItemViewModel>? YouTubeViewersListingItemViewModels => _youTubeViewersListingViewItemModels;
 
         
+        //public ICommand LoadingYouTubeViewerCommand { get; }
 
         public YouTubeViewersListingItemViewModel SelectedYouTubeViewerListingItemViewModel
         {
@@ -36,18 +37,56 @@ namespace YouTube_Viewer.ViewModels
 
         public YouTubeViewersListingViewModel(YouTubeViewersStore? youTubeViewersStore, SelectedYouTubeViewerStore? selectedYouTubeViewerStore, ModalNavigationStore modalNavigationStore)
         {
-            _youTubeViewersListingViewItemModels = new ObservableCollection<YouTubeViewersListingItemViewModel>();
+           _youTubeViewersListingViewItemModels = new ObservableCollection<YouTubeViewersListingItemViewModel>();
             _youTubeViewersStore = youTubeViewersStore;
             _selectedYouTubeViewerStore = selectedYouTubeViewerStore;
             _modalNavigationStore = modalNavigationStore;
+
+           // LoadingYouTubeViewerCommand = new LoadYouTubeViewersCommand(youTubeViewersStore);
+
+            _youTubeViewersStore.YouTubeViewersLoaded += _youTubeViewersStore_YouTubeViewersLoaded;
             _youTubeViewersStore.YouTubeViewersAdded += _youTubeViewersStore_YouTubeViewersAdded;
             _youTubeViewersStore.YouTubeViewersUpdated += _youTubeViewersStore_YouTubeViewersUpdated;
-                        
+           _youTubeViewersStore.YouTubeViewerDeleted += _youTubeViewersStore_YouTubeViewerDeleted;
+
         }
 
+        private void _youTubeViewersStore_YouTubeViewerDeleted(Guid id)
+        {
+            // Find the viewer in the current list by ID
+            YouTubeViewersListingItemViewModel viewerToDelete = _youTubeViewersListingViewItemModels.FirstOrDefault(v => v.YouTubeViewer.Id == id);
+
+            if (viewerToDelete != null)
+            {
+                // Remove the viewer from the list
+                _youTubeViewersListingViewItemModels.Remove(viewerToDelete);
+
+                // Optionally, trigger any UI updates, like refreshing the view
+                //OnPropertyChanged(nameof(YouTubeViewers));
+            }
+        }
+
+        private void _youTubeViewersStore_YouTubeViewersLoaded()
+        {
+            _youTubeViewersListingViewItemModels.Clear();
+
+            foreach (YouTubeViewer youTubeViewer in _youTubeViewersStore.YouTubeViewers)
+            {
+                AddYouTubeViewer(youTubeViewer);
+            }
+        }
+
+       /* public static YouTubeViewersListingViewModel LoadViewModel(YouTubeViewersStore youTubeViewersStore, SelectedYouTubeViewerStore selectedYouTubeViewerStore, ModalNavigationStore modalNavigationStore)
+        {
+            YouTubeViewersListingViewModel viewModel = new YouTubeViewersListingViewModel(youTubeViewersStore, selectedYouTubeViewerStore, modalNavigationStore);
+
+            viewModel.LoadingYouTubeViewerCommand.Execute(viewModel);
+
+            return viewModel;
+        }*/
         private void _youTubeViewersStore_YouTubeViewersUpdated(YouTubeViewer youTubeViewer)
         {
-            YouTubeViewersListingItemViewModel youTubeViewersListingItemViewModel = _youTubeViewersListingViewItemModels.FirstOrDefault(y => y.YouTubeViewer.Id == youTubeViewer.Id);
+            YouTubeViewersListingItemViewModel? youTubeViewersListingItemViewModel = _youTubeViewersListingViewItemModels?.FirstOrDefault(y => y.YouTubeViewer.Id == youTubeViewer.Id);
 
             if (youTubeViewersListingItemViewModel!=null)
             {
@@ -58,6 +97,7 @@ namespace YouTube_Viewer.ViewModels
 
         protected override void Dispose()
         {
+            _youTubeViewersStore.YouTubeViewersLoaded -= _youTubeViewersStore_YouTubeViewersLoaded;
             _youTubeViewersStore.YouTubeViewersAdded -= _youTubeViewersStore_YouTubeViewersAdded;
             _youTubeViewersStore.YouTubeViewersUpdated -= _youTubeViewersStore_YouTubeViewersUpdated;
 

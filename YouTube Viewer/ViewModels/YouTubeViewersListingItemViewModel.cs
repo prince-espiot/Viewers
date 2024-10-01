@@ -52,7 +52,7 @@ namespace YouTube_Viewer.ViewModels
 
         public ICommand? EditCommand { get;}
 
-        public string? DeleteCommand { get;  }
+        public ICommand? DeleteCommand { get;  }
 
         
 
@@ -63,6 +63,7 @@ namespace YouTube_Viewer.ViewModels
             _modalNavigationStore = modalNavigationStore;
 
             EditCommand = new OpenEditYouTubeViewerCommand(this, youTubeViewersStore, modalNavigationStore);
+            DeleteCommand = new DeleteYouTubeViewerCommand(this, youTubeViewersStore);
         }
 
         public void Update(YouTubeViewer youTubeViewer)
