@@ -12,7 +12,7 @@ jobs:
     runs-on: windows-latest  # The latest Windows runner available on GitHub
 
     env:
-      Solution_Name: YouTubeViewer.sln  # Replace with your solution's name
+      Solution_Name: YouTube Viewer.sln  # Replace with your solution's name
 
     steps:
     - name: Checkout code
