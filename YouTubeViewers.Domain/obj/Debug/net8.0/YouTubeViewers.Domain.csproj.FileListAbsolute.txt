@@ -1,0 +1,12 @@
+F:\Wpftutorials\YouTube Viewer\YouTubeViewers.Domain\bin\Debug\net8.0\YouTubeViewers.Domain.deps.json
+F:\Wpftutorials\YouTube Viewer\YouTubeViewers.Domain\bin\Debug\net8.0\YouTubeViewers.Domain.dll
+F:\Wpftutorials\YouTube Viewer\YouTubeViewers.Domain\bin\Debug\net8.0\YouTubeViewers.Domain.pdb
+F:\Wpftutorials\YouTube Viewer\YouTubeViewers.Domain\obj\Debug\net8.0\YouTubeViewers.Domain.GeneratedMSBuildEditorConfig.editorconfig
+F:\Wpftutorials\YouTube Viewer\YouTubeViewers.Domain\obj\Debug\net8.0\YouTubeViewers.Domain.AssemblyInfoInputs.cache
+F:\Wpftutorials\YouTube Viewer\YouTubeViewers.Domain\obj\Debug\net8.0\YouTubeViewers.Domain.AssemblyInfo.cs
+F:\Wpftutorials\YouTube Viewer\YouTubeViewers.Domain\obj\Debug\net8.0\YouTubeViewers.Domain.csproj.CoreCompileInputs.cache
+F:\Wpftutorials\YouTube Viewer\YouTubeViewers.Domain\obj\Debug\net8.0\YouTubeViewers.Domain.sourcelink.json
+F:\Wpftutorials\YouTube Viewer\YouTubeViewers.Domain\obj\Debug\net8.0\YouTubeViewers.Domain.dll
+F:\Wpftutorials\YouTube Viewer\YouTubeViewers.Domain\obj\Debug\net8.0\refint\YouTubeViewers.Domain.dll
+F:\Wpftutorials\YouTube Viewer\YouTubeViewers.Domain\obj\Debug\net8.0\YouTubeViewers.Domain.pdb
+F:\Wpftutorials\YouTube Viewer\YouTubeViewers.Domain\obj\Debug\net8.0\ref\YouTubeViewers.Domain.dll

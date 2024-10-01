@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Input;
 using YouTube_Viewer.Commands;
-using YouTube_Viewer.Models;
+using YouTube_Viewer.Domain.Models;
 using YouTube_Viewer.Stores;
 
 namespace YouTube_Viewer.ViewModels

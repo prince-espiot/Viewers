@@ -40,3 +40,5 @@ F:\Wpftutorials\YouTube Viewer\YouTube Viewer\obj\Debug\net8.0-windows\YouTube V
 F:\Wpftutorials\YouTube Viewer\YouTube Viewer\obj\Debug\net8.0-windows\YouTube Viewer.genruntimeconfig.cache
 F:\Wpftutorials\YouTube Viewer\YouTube Viewer\obj\Debug\net8.0-windows\ref\YouTube Viewer.dll
 F:\Wpftutorials\YouTube Viewer\YouTube Viewer\bin\Debug\net8.0-windows\ModalControl.dll
+F:\Wpftutorials\YouTube Viewer\YouTube Viewer\bin\Debug\net8.0-windows\YouTubeViewers.Domain.dll
+F:\Wpftutorials\YouTube Viewer\YouTube Viewer\bin\Debug\net8.0-windows\YouTubeViewers.Domain.pdb

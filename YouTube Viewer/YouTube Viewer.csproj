@@ -15,4 +15,8 @@
     <PackageReference Include="SimpleModal.WPF" Version="1.0.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\YouTubeViewers.Domain\YouTubeViewers.Domain.csproj" />
+  </ItemGroup>
+
 </Project>
