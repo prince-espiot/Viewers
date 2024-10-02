@@ -16,3 +16,6 @@ dotnet publish -c Release --self-contained -r win-x64 -p:PublishSingleFile=true
 ## License
 
 This project is licensed under the MIT License. See the `LICENSE` file for more details.
+
+## Next Feature
+- Implementation of `Unit Test`
