@@ -30,6 +30,7 @@ namespace YouTube_Viewer.Commands
            
             YouTubeViewerDetailsFormViewModel formViewModel = _addYouTubeViewerViewModel.YouTubeViewerDetailsFormViewModel;
             formViewModel.IsSubmitting = true;
+            formViewModel.ErrorMessage = null;
             YouTubeViewer youTubeViewer = new YouTubeViewer(Guid.NewGuid(), formViewModel.Username, formViewModel.IsSubscribed, formViewModel.IsMember);
             try
             {
@@ -38,7 +39,7 @@ namespace YouTube_Viewer.Commands
             }
             catch (Exception)
             {
-                throw;
+                formViewModel.ErrorMessage = "Failed to add YouTube viewer. Please try again later.";
             }
             finally
             {

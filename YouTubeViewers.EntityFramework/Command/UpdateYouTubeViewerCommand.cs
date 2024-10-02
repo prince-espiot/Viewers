@@ -23,6 +23,7 @@ namespace YouTubeViewers.EntityFramework.Command
             using (YouTubeViewersDbContext context = _youTubeViewersDbContextFactory.Create())
             {
                 //await Task.Delay(3000);
+                //throw new Exception();
                 // Find the existing entity from the database
                 var existingYouTubeViewerDto = await context.YouTubeViewers
                     .FirstOrDefaultAsync(v => v.Id == youTubeViewers.Id);

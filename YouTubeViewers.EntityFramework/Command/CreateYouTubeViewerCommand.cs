@@ -20,6 +20,7 @@ namespace YouTubeViewers.EntityFramework.Command
         }
         public async Task Execute(YouTubeViewer youTubeViewers)
         {
+            //throw new Exception(); 
             using (YouTubeViewersDbContext context = _youTubeViewersDbContextFactory.Create())
             {
                // await Task.Delay(3000);

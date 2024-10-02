@@ -8,7 +8,7 @@
         xmlns:vms="clr-namespace:YouTube_Viewer.ViewModels"
         xmlns:custom="clr-namespace:ModalControl;assembly=ModalControl"
         mc:Ignorable="d"
-        Title="YouTube Viewers" Height="450" Width="800" FontSize="14">
+        Title="EmpDetail" Height="450" Width="800" FontSize="14">
 
     <Window.Resources>
         <DataTemplate DataType="{x:Type vms:AddYouTubeViewerViewModel}">

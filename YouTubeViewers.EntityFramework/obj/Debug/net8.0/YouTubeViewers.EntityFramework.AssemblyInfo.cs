@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("YouTubeViewers.EntityFramework")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8e33092ee2a3eea2c473b7d757bb5e36cd69e9b5")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ef82ba79b7b4b7c351d20de5465d54fbcef8daeb")]
 [assembly: System.Reflection.AssemblyProductAttribute("YouTubeViewers.EntityFramework")]
 [assembly: System.Reflection.AssemblyTitleAttribute("YouTubeViewers.EntityFramework")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
