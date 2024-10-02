@@ -7,7 +7,7 @@ Simple Application that delves into basic and advanced concepts using WPF framew
 - Dependency injection for a cleaner code base. 
 
 
-## COMMANDS
+## Commands
 ```
 dotnet build -c Release
 
