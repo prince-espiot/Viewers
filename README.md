@@ -4,7 +4,8 @@ Simple Application that delves into basic and advanced concepts using WPF framew
 -it integrates Basic I/O functionality
 - Incorporates A backend Database
 - Advanced Abstraction using the MVVM model approach
-- Dependency injection for a cleaner code base. 
+- Dependency injection for a cleaner code base.
+- Continuous Integration pipeline
 
 
 ## Commands
